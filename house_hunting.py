@@ -16,12 +16,11 @@
 
 # Add the ability to set the percentage of the total cost you need for a down payment and the rate of expected return on investment. For each of these, allow the user to enter the value. If they choose not to enter a value, then use the default
 
-portion_down_payment = 0.25
-annual_rate = 0.04
-
 annual_salary = int(input("Enter your annual salary: "))
 portion_saved = float(input("Enter the percent of your salary to save, as a decimal: "))
+annual_rate = float(input("Enter the expected annual rate of return [0.04]: ") or 0.04)
 total_cost = int(input("Enter the cost of your dream home: "))
+portion_down_payment = float(input("Enter the percent of your home's cost to save as a down payment [0.25]: ") or 0.25)
 
 monthly_salary = annual_salary / 12
 current_savings = 0
